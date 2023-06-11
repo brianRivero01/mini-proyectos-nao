@@ -35,9 +35,14 @@ function extractNumbers(text) {
 }
 
 function convertNumbersToText(numbers) {
-    // Numeros que se van a utlizar 
-    // 
     const numberWords = ['cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve'];
-    const textArray = numbers.map(num => numberWords[num] || num);
+    const textArray = numbers.map(num => {
+      if (num >= 0 && num <= 9) {
+        return numberWords[num];
+      } else {
+        return 'El rango disponible para mostrar el número en palabras es del 0 al 9.';
+      }
+    });
     return textArray.join(' ');
-}
+  }
+  

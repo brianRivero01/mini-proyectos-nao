@@ -44,5 +44,5 @@ function convertNumbersToText(numbers) {
       }
     });
     return textArray.join(' ');
-  }
+}
   

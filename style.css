@@ -37,13 +37,13 @@ p {
     margin-top: 0px;
 }
 
-#portfolio {
+.seccion-1, .seccion-2 {
     max-width: 1100px;
     padding: 60px 0;
     margin: auto;
 }
 
-#portfolio .titulo-seccion {
+.titulo-seccion {
     text-align: center;
     font-size: 27px;
     text-transform: uppercase;
@@ -53,13 +53,13 @@ p {
     text-decoration-thickness: 5px;
 }
 
-#portfolio .fila {
+.fila {
     display: flex;
     justify-content: space-evenly;
     margin: 30px 0;
 }
 
-#portfolio .fila .proyecto {
+.fila .proyecto {
     max-width: 450px;
     border: 1px solid #000;
     margin: 0 10px;
@@ -67,7 +67,7 @@ p {
     overflow: hidden;
 }
 
-#portfolio .fila .proyecto img {
+.fila .proyecto img {
     width: 100%;
     height: 100%;
     filter: grayscale(1);
@@ -75,11 +75,11 @@ p {
     transition: .5s;
 }
 
-#portfolio .fila .proyecto:hover img {
+.fila .proyecto:hover img {
     filter: grayscale(0);
 }
 
-#portfolio .fila .proyecto .info {
+.fila .proyecto .info {
     position: absolute;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -91,18 +91,23 @@ p {
     transition: .5s;
 }
 
-#portfolio .fila .proyecto:hover .info {
+.fila .proyecto:hover .info {
     opacity: 1;
     bottom: 0;
 }
+
+.info-py{
+    color: #09ec20cd !important
+}
+
 @media screen and (max-width: 800px) {
-    #portfolio {
+    .seccion1, .seccion2 {
         padding: 50px 0;
     }
-    #portfolio .fila {
+    .fila {
         display: block;
     }
-    #portfolio .fila .proyecto {
+    .fila .proyecto {
         margin: 10px auto;
     }
 }

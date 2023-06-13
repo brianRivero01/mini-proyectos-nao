@@ -1,20 +1,13 @@
-from num2words import num2words
+UNIDADES = [
+    'cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve',
+    'diez', 'once', 'doce', 'trece', 'catorce', 'quince', 'dieciséis', 'diecisiete', 'dieciocho', 'diecinueve'
+]
+def convertir_a_palabras(numero):
+    if 0 <= numero <= 19:
+        return UNIDADES[numero]
+    else:
+        return 'Número fuera de rango'
 
-def convert_number_to_words(number):
-    try:
-        words = num2words(number, lang='es')
-        return words
-    except ValueError:
-        return "Error: No se puede convertir el número en palabras."
-
-
-"""
-# Solicitar entrada del usuario
-number = input("Ingresa un número: ")
-number = int(number)  # Convertir la entrada a un número entero
-"""
-
-# Ejemplo de uso
-number = 1000
-words = convert_number_to_words(number)
-print(f"{number} en palabras es: {words}")
+numero = int(input('Ingrese un número: '))
+resultado = convertir_a_palabras(numero)
+print(f'El número {numero} se escribe como "{resultado}".')

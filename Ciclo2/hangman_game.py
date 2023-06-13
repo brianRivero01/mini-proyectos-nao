@@ -1,12 +1,8 @@
 import random
 
-sourceDir = "C:/Users/RIBERO/Desktop/brian/Desarrolloweb/NAOxTECMILENIO/Reto 4/Ciclo2/peliculas.txt"
+peliculas = ["narnia","avatar","sonic","ratatouille"]
 
-# Abre el archivo en modo de lectura
-with open(sourceDir, 'r') as f:
-    words = f.readlines()
-
-word = random.choice(words).strip()
+word = random.choice(peliculas).strip()
 
 #cantidad de errores permitidos
 errors = 4

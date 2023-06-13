@@ -27,6 +27,12 @@ h4 {
     margin-top: 0px;
 }
 
+.span-title{
+    text-align: center;
+    font-size: 15px;
+    color: #f02c60;
+}
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -73,6 +79,10 @@ p {
     filter: grayscale(1);
     object-fit: cover;
     transition: .5s;
+}
+
+.seccion-2 img:hover{
+    cursor: pointer;
 }
 
 .fila .proyecto:hover img {

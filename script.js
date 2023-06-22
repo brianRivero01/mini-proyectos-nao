@@ -30,3 +30,8 @@ function descargarArchivo(ruta, nombreArchivo) {
   imagenDescarga5.addEventListener("click", function () {
     descargarArchivo("Ciclo2/", "hangman_game.py");
   });
+
+  const imagenDescarga6 = document.getElementById("imagen-descarga-6");
+  imagenDescarga6.addEventListener("click", function () {
+    descargarArchivo("Ciclo3/", "app.py");
+  });
